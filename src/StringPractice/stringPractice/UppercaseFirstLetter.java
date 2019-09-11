@@ -21,15 +21,17 @@ public class UppercaseFirstLetter {
 
         if (input.length() != 0){
 
+            if (input.length() > 1) {
+                String randomName=input.substring(1);
+                char bobby = input.charAt(0);
 
-            char bobby = input.charAt(0);
+                String billy = Character.toString(bobby);
 
-            String billy = Character.toString(bobby);
+                String suzy = billy.toUpperCase();
 
-            String suzy = billy.toUpperCase();
-
-            input = input.replace(billy, suzy);
-
+                //input = input.replace(billy, suzy);
+                input = suzy.concat(randomName);
+            }
         }
 
         return input;
