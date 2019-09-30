@@ -99,5 +99,6 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="module" module-name="127-shared" />
   </component>
 </module>
