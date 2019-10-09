@@ -19,8 +19,8 @@ public class LibraryMain {
      * @param library list of library items
      * @return true if item checked out successfully, false otherwise
      */
-    public static boolean checkOut(String title, List<Book> library) {
-        for(Book book : library) {
+    public static boolean checkOut(String title, List<Media> library) {
+        for(Media book : library) {
             if(book.getTitle().equalsIgnoreCase(title)) {
                 return book.checkOut();
             }
@@ -37,8 +37,8 @@ public class LibraryMain {
      * @param library list of library items
      * @return true if item checked in successfully, false otherwise
      */
-    public static boolean checkIn(String title, List<Book> library) {
-        for(Book book : library) {
+    public static boolean checkIn(String title, List<Media> library) {
+        for(Media book : library) {
             if(book.getTitle().equalsIgnoreCase(title)) {
                 return book.checkIn();
             }
@@ -51,13 +51,18 @@ public class LibraryMain {
 
         // create/populate library
         // TODO: make this a list of Media objects, once your interface has been completed
-        List<Book> library = new ArrayList<>();
+        List<Media> library = new ArrayList<>();
 
         library.add(new Book("American Gods", "Neil Gaiman"));
         library.add(new Book("The Yiddish Policeman's Union", "Michael Chabon"));
         library.add(new Book("Pond", "Claire-Louise Bennett"));
         library.add(new Book("The Dream Songs", "John Berryman"));
         library.add(new Book("The Dud Avocado", "Elaine Dundy"));
+        library.add(new Video("Jason Bourne","Quintin", 4));
+        library.add(new Video("The Maze Runner","Jacob",2));
+
+        System.out.println(library.get(5).preview());
+
 
         // TODO: add Video objects to your library, once the class has been created
         // If you create additional Media classes, add those items too!
@@ -95,7 +100,7 @@ public class LibraryMain {
                 System.out.println("\n-----\nLibrary Inventory\n-----\n");
 
                 // TODO: edit this to work for all Media items
-                for(Book book : library) {
+                for(Media book : library) {
                     System.out.println(book.toString());
                 }
 

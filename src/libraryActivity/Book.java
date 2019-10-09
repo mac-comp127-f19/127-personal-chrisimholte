@@ -72,5 +72,11 @@ public class Book implements Media{
             are they each doing?
          */
         //return (this.isAvailable ? !this.isAvailable : (this.isAvailable = true));
+
+    }
+    @Override
+    public String preview() {
+        return (toString());
+
     }
 }

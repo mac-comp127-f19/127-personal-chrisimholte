@@ -58,4 +58,10 @@ public class Video implements Media{
     public String getTitle() {
         return title;
     }
+
+
+    @Override
+    public String preview(){
+        return(toString());
+    }
 }
