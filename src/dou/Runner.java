@@ -15,14 +15,14 @@ public class Runner {
         int counter = 0;
         List<Card> cardList = new ArrayList<Card>();
 
-        for(int i = 0; i<18; i++){
+        for(int i = 0; i<18; i++){/*
             Card newCard = new Card(i);
-        }
+*/        }
 
 
-
+/*
         canvas.onMouseMove((mouseEvent)-> card.follower(mouseEvent.getPosition().getX(), canvas));
-
+*/
 
     }
 
