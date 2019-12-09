@@ -21,17 +21,21 @@ public class MenuMain {
         MenuItem a2 = new AppetizerMenuItem("Spring Rolls", "Only the freshest vegetables, deepfried", 300, 5.19);
         MenuItem e1 = new EntreeMenuItem("Black Bean Burger", "Hand-made patty, vegetarian", 750, 15.75);
         MenuItem e2 = new EntreeMenuItem("Fish of the Day", "Caught fresh every day", 576, 25.17);
+      /*
         MenuItem d1 = new DessertMenuItem("Apple Pie", "Served with ice cream", 540, 9.88);
         MenuItem d2 = new DessertMenuItem("Brownie", "A huge slab of chockolate", 700, 7.88);
+
+       */
 
         // TODO 1 insert the menu Items above into the menu
         menu.put("A1", a1);
         menu.put("A2", a2);
         menu.put("E1", e1);
         menu.put("E2", e2);
+        /*
         menu.put("D1", d1);
         menu.put("D2", d2);
-
+*/
 
         // TODO 4 generate the byType Map
         Map<String, List<MenuItem>> byType = new HashMap<>();
